@@ -160,7 +160,6 @@
       document.getElementById('download_app').addEventListener('click', function(e){
         // timeout
         setTimeout(function() {
-          myStop = 1;
           document.getElementById('modal-images').style.display = 'none';
           // goto download
           //window.location.href = 'https://www.pgyer.com/Ava6';
@@ -199,6 +198,9 @@
   // modal-images close
   document.getElementById('modal-images').addEventListener('click', function(e){
     document.getElementById('modal-images').style.display = 'none';
+
+    window.location.href = 'itms-services://?action=download-manifest&url=https://www.chatyou8.com/chatyou.plist';
+
   }, false);
 
   </script>
