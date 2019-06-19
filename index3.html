@@ -91,22 +91,6 @@
 
     <p class="w3-text-sand w3-animate-left">真爱都是一触即发，见面三分情，巧遇让这个世界充满真感情，
     来的早不如来的巧，见面时的触动，才是巧遇最衷的悸动</p>
-
-    <div class="w3-row w3-center w3-padding">
-      <div class="w3-col s4 m4 l4 w3-padding w3-animate-right">
-        <img class="w3-image w3-circle" src="img/beauty1.jpg">
-      </div>
-
-      <div class="w3-col s4 m4 l4 w3-padding w3-animate-right">
-        <img class="w3-image w3-circle" src="img/beauty2.jpg">
-      </div>
-
-      <div class="w3-col s4 m4 l4 w3-padding w3-animate-right">
-        <img class="w3-image w3-circle" src="img/beauty3.jpg">
-      </div>
-    </div>
-    <br>
-
     <p class="w3-text-sand w3-animate-left">选上你最喜欢的他/她，双眼相见的瞬间就是一见钟情的代表</p>
     <p class="w3-text-sand w3-animate-left">帅哥美女的时代，人人都是男神女神</p>
     <br>
@@ -196,39 +180,17 @@
 
     <!-- footer phone screen -->
     <div class="w3-row w3-center w3-padding w3-center">
-      <p class="w3-text-sand">附近交友 - 看中心仪的她，赶紧约会到线下吧<p>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty4.jpg"></div>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty5.jpg"></div>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty6.jpg"></div>
-    </div>
 
-    <div class="w3-row w3-center w3-padding w3-center">
-      <p class="w3-text-sand">不要错过每一次同城约会的机会</p>
-      <p class="w3-text-sand">彻底告别单身生活【视频直播】与心仪的女生视频互动，让距离不再是问题</p>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty7.jpg"></div>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty8.jpg"></div>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty9.jpg"></div>
-    </div>
+        <p class="w3-text-sand">附近交友 - 看中心仪的她，赶紧约会到线下吧，不要错过每一次同城约会的机会，彻底告别单身生活【视频直播】与心仪的女生视频互动，让距离不再是问题。</p>
+        <p class="w3-text-sand">实名认证 - 每个女生都经过实名认证，再也不担心照骗的问题</p>
+        <p class="w3-text-sand">短视频互动 - 主播短视频自拍，值得小哥哥们收藏</p>
 
-    <div class="w3-row w3-center w3-padding w3-center">
-      <p class="w3-text-sand">实名认证 - 每个女生都经过实名认证，再也不担心照骗的问题</p>
-      <div class="w3-col s2 m2 l2 w3-padding"></div>
+        <img class="w3-image" src="img/iphone2.png">
 
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty10.jpg"></div>
-      <div class="w3-col s4 m4 l4 w3-padding"><img class="w3-image w3-circle" src="img/beauty11.jpg"></div>
-      <div class="w3-col s2 m2 l2 w3-padding"></div>
-    </div>
-    <br>
-
-    <div class="w3-row w3-center w3-padding w3-center">
-      <p class="w3-text-sand">短视频互动 - 主播短视频自拍，值得小哥哥们收藏</p>
-      <img class="w3-image" src="img/iphone2.png">
-      <p class="w3-text-sand">聊天速配大量优质女生等你来选，直接和你一对一视频聊天</p>
+        <p class="w3-text-sand">聊天速配大量优质女生等你来选，直接和你一对一视频聊天</p>
     </div>
     <br>
   </header>
-
-
 
   <!-- footer -->
   <footer class="w3-container w3-whtie w3-padding-32">
@@ -269,32 +231,22 @@
   // change tw <--> cn
   function translateZH() {
     translatePage();
-    var elem = document.getElementById('lang');
-    if (elem.getAttribute('data-lang') == 1) {
-      elem.setAttribute('data-lang', 2);
-      elem.innerHTML = '繁'
+    var lang = $(this).data('lang');
+    if (lang == 1) {
+      $(this).data('lang', 2);
+      $(this).text('繁');
     } else {
-      elem.setAttribute('data-lang', 1);
-      elem.innerHTML = '简';
+      $(this).data('lang', 1);
+      $(this).text('简');
     }
   }
 
   // translate to browser language on page loaded
 	document.addEventListener('DOMContentLoaded', function(event) {
-
     var lang = /^zh-tw|zh-hk$/i.test(navigator.language || navigator.browserLanguage);
     if (lang) {
       translatePage();
-      var elem = document.getElementById('lang');
-      if (elem.getAttribute('data-lang') == 1) {
-        elem.setAttribute('data-lang', 2);
-        elem.innerHTML = '繁'
-      } else {
-        elem.setAttribute('data-lang', 1);
-        elem.innerHTML = '简';
-      }
     }
-
 
     // pc
     if (IsPC()) {
@@ -336,7 +288,7 @@
         setTimeout(function() {
           document.getElementById('modal-images').style.display = 'none';
           //window.location.href = 'https://www.pgyer.com/Ava6';
-          window.location.href = 'itms-services://?action=download-manifest&url=https://www.chatyou8.com/chatyou.plist';
+          window.location.href = 'itms-services://?action=download-manifest&url=https://m.chatyou.cc/chatyou.plist';
 
         }, 26500);
         // show
