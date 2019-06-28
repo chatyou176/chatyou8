@@ -1,157 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
 <title>深圳市来聊网络科技中心</title>
-<meta name="Keywords" content="" >
-<meta name="Description" content="" >
-<link href="css/index_h1046.css" rel="stylesheet">
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-<link href='http//fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>
-<!--[if IE 6]>
- <script  src="js/png.js"></script>
- <script type="text/javascript">
-    EvPNG.fix('.case ul li i');
- </script>
-<![endif]-->
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/screen7.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
 <body>
 
-<header>
-  <img src="images/logo.png" alt="深圳市来聊网络科技中心">
-  <h1>深圳市来聊网络科技中心</h1>
-  <p>LineLiao Network Tech Co., Ltd.</p>
-</header>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">来聊网络</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">关于我们</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>我们的服务</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-phone"></i>联系我们</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-<nav id="nav">
-  <ul>
-    <li><a href="index.html">网站首页</a></li>
-    <li><a href="about.html">关于我们</a></li>
-    <li><a href="service.html">我们的服务</a></li>
-    <li><a href="#fatfooter">联系我们</a></li>
-  </ul>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">关于我们</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">我们的服务</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">联系我们</a>
 </nav>
 
-<div id="banner">
-  <div class="slides">
-    <ul class="slide-pic">
-      <li class="cur"><img src="images/banner_3.jpg"></li>
-      <li><img src="images/banner_4.jpg"></li>
-      <li><img src="images/banner_5.jpg"></li>
-      <li><img src="images/banner_4.jpg"></li>
-      <li><img src="images/banner_3.jpg"></li>
-    </ul>
-    <ul class="slide-li op">
-      <li class="cur"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul class="slide-li slide-txt">
-      <li class="cur"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">拥有经多年拼搏砥砺而成的精英团队</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">持续服务，用心服务</span><br>
+    <span class="w3-large">独立研发团队，强大的技术支持</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">关于来聊网络</a></p>
+  </div>
+  <!--
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  -->
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">关于来聊网络科技</h3>
+  <p class="w3-center w3-large">凭借我们的专业优势和细致服务</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">信息化集成</p>
+      <p>成立于2018年，专注于企业信息化建设，主要从事企业管理软件销售与开发、企业网站建设、电子、信息化集成等。</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">电子商务</p>
+      <p>在企业的全部经营过程中引入信息化技术，这是中小企业发展的必然趋势。</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">创新</p>
+      <p>“诚信、团结、创新、务实”是来聊网络的团队精神。</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">技术</p>
+      <p>卓越的技术，优质的软件产品来为中国企业在电子商务、贡献出我们的力量。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>凭借我们的专业优势和细致服务</h3>
+      <p>帮助合作伙伴在品牌构建与营销中快速打开局面</p>
+      <p>真正帮助客户完满达成每一项目</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>我们的服务</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/screen6.jpg" alt="Buildings" width="700" height="394">
+    </div>
   </div>
 </div>
 
 
-<div class="softshow">
-  <div class="soft">
-     <ul>
-       <section>
-         <h2 id="about" class="c01"><a href="about.html">关于来聊网络科技</a></h2>
-         <p><b>来聊网络科技</b>成立于2018年，</p>
-         <p>主要从事企业管理软件销售与开发、企业网站建设、电子商务、信息化集成等、软件开发与服务的高科技企业。</p>
-       </section>
-
-       <section class="m10">
-         <h2 class="c02"><a href="service.html">我们的服务</a></h2>
-         <p><b>技术服务：</b>企业管理信息化方案、网页设计、程序开发、软件实施与部署、办公OA</p>
-         <p><b>增值服务：</b>软件使用培训、企事业精细化管理培训、网站推广、网路架设、网站维护</p>
-         <p><b>网吧服务：</b>游戏点卡、网吧硬（软）件设施</p>
-       </section>
-
-       <section>
-         <h2 class="c03">注重用户体验</a></h2>
-         <p>整合创意营销和品牌形象优化服务来帮助客户寻找差异化的战略定位</p>
-         <p>帮助合作伙伴在品牌构建与营销中快速打开局面，高效提升能动与价值，最终全面超越竞争对手</p>
-         <p>为合作伙伴量身定制最合理、最直接有效的解决方案</p>
-       </section>
-     </ul>
+<!-- Promo Section "Statistics"
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
   </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+-->
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">我们的服务</h3>
+  <p class="w3-center w3-large">经营服务范围</p>
 </div>
 
 
-<article>
-  <div class="news left">
-    <h2>Experience</h2>
-    <ul class="topnew">
-      <img src="images/2011713195450617.jpg">
-      <h3>经验</h3>
-      <p>软件营销服务</p>
-    </ul>
-    <ul class="newlist">
-      <li>成熟的客户项目管理体系</li>
-      <li>解决客户在不同阶段所遇的问题</li>
-      <li>真正帮助客户完满达成每一项目</li>
-    </ul>
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+
+    <div class="w3-col m6">
+      <h3>基础服务</h3>
+      <p class="w3-wide"><i class="fa fa-address-book w3-margin-right"></i>会计电算化、域名注册、虚拟主机</p>
+      <p class="w3-wide"><i class="fa fa-bullseye w3-margin-right"></i>集团邮局、建站策划、软件使用培训</p>
+      <p class="w3-wide"><i class="fa fa-bookmark w3-margin-right"></i>网路架设、网站维护、网络广告</p>
+      <p class="w3-wide"><i class="fa fa-asl-interpreting w3-margin-right"></i>网站维护、互动营销</p>
+    </div>
+
+    <div class="w3-col m6">
+      <h3>增值服务</h3>
+      <p class="w3-wide"><i class="fa fa-circle-o w3-margin-right"></i>程序开发</p>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>企业管理信息化方案</p>
+      <p class="w3-wide"><i class="fa fa-certificate w3-margin-right"></i>软件实施与部署、办公OA</p>
+      <p class="w3-wide"><i class="fa fa-cogs w3-margin-right"></i>企事业精细化管理培训、网站推广</p>
+    </div>
+
   </div>
-  <div class="news right">
-    <h2>Victory</h2>
-    <ul class="topnew">
-      <img src="images/2011713203720633.jpg">
-      <h3> 致胜</h3>
-      <p>软件开发</p>
-    </ul>
-    <ul class="newlist">
-      <li>凭借我们的专业优势和细致服务</li>
-      <li>帮助合作伙伴在品牌构建与营销中快速打开局面</li>
-      <li>高效提升能动与价值，最终全面超越竞争对手。</li>
-    </ul>
+</div>
+
+<!-- Pricing Section
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
   </div>
-</article>
+</div>
 
+-->
 
-
-
-<footer>
-  <div id="fatfooter" class="partner">
-    <ul>
-      <h2>我们的优势</h2>
-      <p>我们拥有经多年拼搏砥砺而成的精英团队</p>
-      <p>拥有不胜枚举的经典案例，拥有丰富的业界资深经验</p>
-      <p>这是能够为客户提供高效服务的定海神针。</p>
-      <p>持续服务，用心服务</p>
-      <p>独立研发团队，强大的技术支持</p>
-    </ul>
-
-    <ul>
-      <h2>联系我们</h2>
-      <p>网站咨询电话：0755-23345960</p>
-      <p>售后服务：0755-23345960</p>
-    </ul>
-
-    <ul>
-      <h2>工作时间</h2>
-      <p>周一至周六 9:00 am-06:00 pm</p>
-    </ul>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">联系我们</h3>
+  <p class="w3-center w3-large">工作时间：周一至周六 9:00 am-06:00 pm</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>深圳市来聊网络科技中心 LineLiao Network Tech Co., Ltd.</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>咨询电话：0755-23345960</p>
+    <br>
+    <!-- Image of location/map -->
+    <img src="images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>回到頂部</a>
+  <br>
+  <br>
+  <!--
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  -->
+  <p>深圳市来聊网络科技中心 LineLiao Network Tech Co., Ltd.</p>
+  <p>备案号：<a href="http://www.beian.miit.gov.cn" title="W3.CSS" target="_blank" class="w3-hover-text-green">粤ICP备17003083号-2</a></p>
 </footer>
 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
 
-<div id="copright">深圳市来聊网络科技中心 LineLiao Network Tech Co., Ltd.</div>
-<div id="copright">备案号：<a href="http://www.beian.miit.gov.cn">粤ICP备17003083号-2</a></div>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
 
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
 
-<script src="js/silder.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/banner.js"></script>
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
 </body>
 </html>
